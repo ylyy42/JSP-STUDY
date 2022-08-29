@@ -1,0 +1,31 @@
+package jungol;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		result(sc.nextLine());
+	}
+	
+	public static int result(String input) {
+		String[] arr = input.split(" ");
+		
+		int a = Integer.parseInt(arr[0]);
+		int b = Integer.parseInt(arr[2]);
+		char c = arr[1].charAt(0);
+		
+		if(c == '+') {
+			return a+b;
+		} else if(c == '-') {
+			return a-b;
+		} else if(c == '*') {
+			return a*b;
+		} else if(c == '/') {
+			return a/b;
+		} else {
+			return 0;
+		}
+	}
+}

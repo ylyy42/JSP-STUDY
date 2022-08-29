@@ -1,0 +1,26 @@
+package jungol;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int height = sc.nextInt();
+		int width = sc.nextInt();
+		int[][] cheeseArr = new int[13][12];
+		
+		for(int i = 0; i < 13; i++) {
+			for(int j = 0; j < 12; j++) {
+				int cheese = sc.nextInt();
+				cheeseArr[i][j] = cheese;
+				System.out.print(cheeseArr[i][j] + " ");
+			}
+			System.out.println();
+		}
+		
+		sc.close();
+		
+		
+	}
+}
