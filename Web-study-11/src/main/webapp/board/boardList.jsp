@@ -28,7 +28,7 @@
 				<tr class="record">
 					<td>${board.num}</td>
 					<td>
-						<a href="BoardServlet?command=board_view&num=${board.num}"></a>
+						<a href="BoardServlet?command=board_view&num=${board.num}">${board.title}</a>
 					</td>
 					<td>${board.name}</td>
 					<td><fmt:formatDate value="${board.writedate}" /></td>
