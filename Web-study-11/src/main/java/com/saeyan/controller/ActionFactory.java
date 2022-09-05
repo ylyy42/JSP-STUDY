@@ -1,6 +1,8 @@
 package com.saeyan.controller;
 
 import com.saeyan.controller.action.Action;
+import com.saeyan.controller.action.BoardCheckPassAction;
+import com.saeyan.controller.action.BoardCheckPassFormAction;
 import com.saeyan.controller.action.BoardListAction;
 import com.saeyan.controller.action.BoardViewAction;
 import com.saeyan.controller.action.BoardWriteAction;
@@ -29,6 +31,10 @@ public class ActionFactory {
 			action = new BoardWriteAction();
 		} else if (command.equals("board_view")) {
 			action = new BoardViewAction();
+		} else if (command.equals("board_check_pass")) {
+			action = new BoardCheckPassAction();
+		} else if (command.equals("board_check_pass_form")) {
+			action = new BoardCheckPassFormAction();
 		}
 
 		return action;
