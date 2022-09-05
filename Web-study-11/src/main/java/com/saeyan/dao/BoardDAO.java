@@ -137,7 +137,7 @@ public class BoardDAO {
 	}
 
 	public void updateBoard(BoardVO bVo) {
-		String sql = "update board set name=?, email=?, pass=?, " + "title=?, content=?, where num=?";
+		String sql = "update bboard set name=?, email=?, pass=?, title=?, content=? where num=?";
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;

@@ -26,7 +26,7 @@
 				</tr>
 				<tr>
 					<th>이메일</th>
-					<td><input type="text" size="40" maxlength="50" name="email" value="${board.eamil}"></td>
+					<td><input type="text" size="40" maxlength="50" name="email" value="${board.email}"></td>
 				</tr>
 				<tr>
 					<th>제목</th>
